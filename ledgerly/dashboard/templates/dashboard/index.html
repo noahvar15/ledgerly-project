@@ -55,7 +55,7 @@
           <div id="sidebar" class="sidebar sidebar-with-footer">
             <!-- Aplication Brand -->
             <div class="app-brand">
-              <a href="">
+              <a href="{% url 'dashboard-home' %}">
                 <img src="{% static 'images/ledgerly_logo.svg' %}" alt="Ledgerly"> <!--edited-->
                 <span class="brand-name">ledgerly</span>
               </a>
@@ -159,7 +159,7 @@
                 <span class="sr-only">Toggle navigation</span>
               </button>
 
-              <span class="page-title">dashboard</span>
+              <span class="page-title"> {% block pageTitle %}dashboard{% endblock pageTitle %}</span>
 
               <div class="navbar-right ">
 

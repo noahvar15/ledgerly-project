@@ -1,0 +1,20 @@
+
+<svg
+    width="200"
+    height="200"
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- The main "L" shape -->
+  <rect x="50" y="20" width="30" height="110" fill="#4BBAA8" />
+  <rect x="50" y="130" width="100" height="30" fill="#4BBAA8" />
+
+  <!-- The ledger lines on the vertical bar -->
+  <rect x="52" y="30" width="26" height="2" fill="#ffffff" />
+  <rect x="52" y="50" width="26" height="2" fill="#ffffff" />
+  <rect x="52" y="70" width="26" height="2" fill="#ffffff" />
+
+  <!-- Subtle "block" squares at the intersection -->
+  <rect x="48" y="128" width="6" height="6" fill="#ffffff" />
+  <rect x="58" y="128" width="6" height="6" fill="#ffffff" />
+</svg>

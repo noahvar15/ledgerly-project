@@ -13349,7 +13349,7 @@ label {
   display: flex;
   flex-direction: column;
   transform: translateX(-250px);
-  background-color: #1d1f26;
+  background-color: #000;
   top: 0;
   bottom: 0;
   background-attachment: fixed;
@@ -13371,7 +13371,7 @@ label {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(29, 31, 38, 0.85);
+  background-color: #000;
   content: "";
 }
 
@@ -13451,7 +13451,7 @@ label {
   }
 }
 .app-brand a img {
-  max-width: 128px;
+  max-width: 50px;
   vertical-align: middle;
 }
 .app-brand .brand-name {
@@ -13468,6 +13468,13 @@ label {
   text-align: center;
   line-height: 20px;
   font-size: 1.5rem;
+}
+
+.sidebar-icons {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  margin-right: 1rem;
 }
 
 /* Caret styles */
@@ -13577,6 +13584,7 @@ label {
   margin-right: auto;
   text-transform: capitalize;
 }
+
 .sidebar .sidenav-item-link .badge {
   padding: 0.4em 0.6em;
 }
@@ -16942,7 +16950,7 @@ input[type=radio] {
   left: 28px;
 }
 
-/*===== METERIAL DESING CODES =====*/
+/*===== MATERIAL DESIGN CODES =====*/
 .mdi-show-code code {
   display: inline-block;
   vertical-align: middle;

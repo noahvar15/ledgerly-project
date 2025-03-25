@@ -405,6 +405,7 @@ $(document).ready(function () {
         {
           orderable: false,
           targets: [-1],
+          className: "text-end",
         },
       ],
     });

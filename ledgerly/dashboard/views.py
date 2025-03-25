@@ -15,4 +15,4 @@ def transactions(request):
     return render(request, 'dashboard/transactions.html', {})
 
 def settings(request):
-    return render(request, 'dashboard/settings.html', {})
+    return render(request, 'dashboard/dashboard-settings.html', {})

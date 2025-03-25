@@ -7,3 +7,12 @@ def index(request):
 
 def analytics(request):
     return render(request, 'dashboard/analytics.html', {})
+
+def assets(request):
+    return render(request, 'dashboard/assets.html', {})
+
+def transactions(request):
+    return render(request, 'dashboard/transactions.html', {})
+
+def settings(request):
+    return render(request, 'dashboard/settings.html', {})

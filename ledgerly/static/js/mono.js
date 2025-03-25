@@ -269,11 +269,6 @@ $(document).ready(function () {
     ) {
       var scroll = $(window).scrollTop();
 
-      if (scroll >= 10) {
-        navbar.addClass("navbar-light").addClass("navbar-transparent");
-      } else {
-        navbar.removeClass("navbar-light").addClass("navbar-transparent");
-      }
     }
   });
 

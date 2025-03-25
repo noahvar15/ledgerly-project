@@ -4187,7 +4187,7 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.171875rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: #000;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -12363,6 +12363,7 @@ code {
   padding: 0;
   border-bottom: 1px solid rgba(229, 233, 242, 0.25);
   transition: margin-left 0.3s ease-in-out;
+  background-color: #000;
   /* Page Title */
   /* Search Form */
   /* Navbar Nav */
@@ -12854,7 +12855,7 @@ code {
   background-color: #ffffff;
 }
 .navbar.navbar-transparent .search-form .input-group .btn {
-  background-color: transparent;
+  background-color: #000;
   border-color: #e5e9f2;
   color: #8a909d;
 }

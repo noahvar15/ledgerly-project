@@ -25,7 +25,7 @@
   <link id="main-css-href" rel="stylesheet" href="{% static 'css/style.css' %}">
 
   <!-- FAVICON -->
-  <link href="{% static 'images/favicon.png' %}" rel="shortcut icon">
+  <link href="{% static 'images/ledgerly_logo.svg' %}" rel="shortcut icon">
 
   <!-- JavaScript -->
   <script src="{% static 'plugins/nprogress/nprogress.js' %}"></script>
@@ -65,15 +65,15 @@
               <!-- sidebar menu -->
               <ul class="nav sidebar-inner" id="sidebar-menu">
 
-                <li>
-                  <a class="sidenav-item-link" href=""> <!--When clicked a popout will open with other portfolios-->
+                <li class="sidenav-item-link">
+                  <a class="offcanvas-toggler active custom-dropdown-toggler" data-offcanvas="contact-off" href="javascript:"> <!--When clicked a popout will open with other portfolios-->
                     <svg class="sidebar-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                       <path fill="currentColor" d="M4 7V19H19V21H4C2 21 2 19 2 19V7H4M21.3 3H7.7C6.76 3 6 3.7 6 4.55V15.45C6 16.31 6.76 17 7.7 17H21.3C22.24 17 23 16.31 23 15.45V4.55C23 3.7 22.24 3 21.3 3M8 5H13V11H8V5M21 15H8V13H21V15M21 11H15V9H21V11M21 7H15V5H21V7Z"/>
                     </svg>
                     <span class="nav-text">Portfolio Name</span>
                   </a>
                 </li>
-                
+
 
                 
                   <li class="active">
@@ -163,46 +163,14 @@
 
               <div class="navbar-right ">
 
-                <!-- search form -->
-                <div class="search-form">
-                  <form action="index.html" method="get">
-                    <div class="input-group input-group-sm" id="input-group-search">
-                      <input type="text" autocomplete="off" name="query" id="search-input" class="form-control" placeholder="Search..." />
-                      <div class="input-group-append">
-                        <button class="btn" type="button">/</button>
-                      </div>
-                    </div>
-                  </form>
-                  <ul class="dropdown-menu dropdown-menu-search">
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Morbi leo risus</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Dapibus ac facilisis in</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Porta ac consectetur ac</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Vestibulum at eros</a>
-                    </li>
-
-                  </ul>
-
-                </div>
-
                 <ul class="nav navbar-nav">
                   <!-- Offcanvas -->
                   <li class="custom-dropdown">
-                    <a class="offcanvas-toggler active custom-dropdown-toggler" data-offcanvas="contact-off" href="javascript:" >
-                      <i class="mdi mdi-contacts icon"></i>
-                    </a>
-                  </li>
-                  <li class="custom-dropdown">
                     <button class="notify-toggler custom-dropdown-toggler">
-                      <i class="mdi mdi-bell-outline icon"></i>
-                      <span class="badge badge-xs rounded-circle">21</span>
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="White" d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" />
+                      </svg>
+                      <span class="badge badge-xs rounded-circle">0</span>
                     </button>
                     <div class="dropdown-notify">
 
@@ -457,7 +425,9 @@
                   <!-- User Account -->
                   <li class="dropdown user-menu">
                     <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-                      <img src="images/user/user-xs-01.jpg" class="user-image rounded-circle" alt="User Image" />
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="White" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                      </svg>
                       <span class="d-none d-lg-inline-block">John Doe</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right">

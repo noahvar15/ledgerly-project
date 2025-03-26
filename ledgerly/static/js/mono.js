@@ -214,7 +214,10 @@ $(document).ready(function () {
     var offcanvasId = $(this).attr("data-offcanvas");
     cardOffcanvas.removeClass("active");
     $("#" + offcanvasId).addClass("active");
-    $("#body").append('<div class="offcanvas-overlay"></div>');
+    // Only add overlay if it doesn't already exist
+    if ($(".offcanvas-overlay").length === 0) {
+      $("body").append('<div class="offcanvas-overlay"></div>');
+    }
   });
 
   /* Overlay Click*/

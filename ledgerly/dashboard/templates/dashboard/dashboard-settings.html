@@ -10,7 +10,10 @@
 {% block navSettings %} class="active" {% endblock navSettings %}
 
 /*Content*/
-{% block content %}{% endblock content %}
+{% block content %}
+    {% block holdings %}{% endblock holdings %}
+    {% block charts %}{% endblock charts %}
+{% endblock content %}
 
 /*Toaster*/
 {% block toaster %}<!-- <div id="toaster"></div> -->{% endblock toaster %}

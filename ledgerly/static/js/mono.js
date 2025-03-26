@@ -259,18 +259,6 @@ $(document).ready(function () {
   }
 
   /*======== 11. NAVBAR TRANSPARENT SCROLL ========*/
-  var body = $("#body");
-  var navbar = $("#navbar");
-  $(window).scroll(function () {
-    if (
-      body.hasClass("navbar-fixed") &&
-      $(this).width() > 765 &&
-      navbar.hasClass("navbar-transparent")
-    ) {
-      var scroll = $(window).scrollTop();
-
-    }
-  });
 
   /*======== 12. NAVBAR SEARCH ========*/
   var searchInput = $("#search-input");

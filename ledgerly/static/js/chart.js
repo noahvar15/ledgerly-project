@@ -1700,6 +1700,9 @@ if (statusSmBarChart3 !== null) {
 /*======== 10.1 LINE CHART 01 ========*/
 var lineChart1 = document.querySelector("#line-chart-1");
 if (lineChart1 !== null) {
+    // Clear any existing chart inside the container
+    lineChart1.innerHTML = "";
+
   var lineChartOption1 = {
     chart: {
       height: 350,
@@ -1716,7 +1719,7 @@ if (lineChart1 !== null) {
     plotOptions: {
       horizontal: false,
     },
-    colors: ["#9e6de0", "#fec400"],
+    colors: ["#4BBAA8", "#fec400"],
     series: [
       {
         data: [6, 10, 8, 20, 15, 6, 21],
@@ -1738,11 +1741,21 @@ if (lineChart1 !== null) {
       size: [5, 0],
     },
     xaxis: {
+      labels: {
+        style: {
+          colors: '#ffffff' // X-axis label color
+        },
+      },
       axisBorder: {
         show: false,
       },
       axisTicks: {
         show: false,
+      },
+    },
+    yaxis: {
+      labels: {
+        show: true,
       },
     },
     tooltip: {

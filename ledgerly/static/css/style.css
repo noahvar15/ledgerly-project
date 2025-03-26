@@ -6418,7 +6418,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #4BBAA8 !important;
+  background-color: #000 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -12149,6 +12149,11 @@ code {
 }
 
 /* ===== APEXCHARTS ===== */
+/*Y-axis Label*/
+.apexcharts-yaxis-label {
+  fill: #ffffff !important;
+}
+
 /* Apexchart Canvas */
 .apexcharts-canvas svg {
   border-radius: 0.3125rem;
@@ -12160,13 +12165,13 @@ code {
 }
 .radial-bar-chart-footer .title-large {
   font-size: 1.625rem;
-  color: #31343d;
+  color: #fff;
 }
 .radial-bar-chart-footer .title-large i {
   font-size: 1.25rem;
 }
 .radial-bar-chart-footer .title-small {
-  color: #8a909d;
+  color: #fff;
 }
 
 #mixed-chart-1 .apexcharts-tooltip,

@@ -1700,8 +1700,8 @@ if (statusSmBarChart3 !== null) {
 /*======== 10.1 LINE CHART 01 ========*/
 var lineChart1 = document.querySelector("#line-chart-1");
 if (lineChart1 !== null) {
-    // Clear any existing chart inside the container
-    lineChart1.innerHTML = "";
+  // Clear any existing chart inside the container
+  lineChart1.innerHTML = "";
 
   var lineChartOption1 = {
     chart: {
@@ -1709,6 +1709,12 @@ if (lineChart1 !== null) {
       type: "line",
       toolbar: {
         show: false,
+      },
+      events: {
+        mounted: function() {
+          // Reveal chart after it's mounted
+          lineChart1.style.visibility = "visible";
+        }
       },
     },
     stroke: {

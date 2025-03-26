@@ -12149,6 +12149,11 @@ code {
 }
 
 /* ===== APEXCHARTS ===== */
+/*Initial state of linechart1*/
+#line-chart-1 {
+  visibility: hidden;
+}
+
 /*Y-axis Label*/
 .apexcharts-yaxis-label {
   fill: #ffffff !important;

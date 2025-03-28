@@ -14585,6 +14585,10 @@ table.dataTable thead .sorting {
   }
 }
 
+.dataTables_scrollHead{
+  background-color: #000;
+}
+
 .table.dataTable.no-footer,
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
   border-bottom-color: #e5e9f2;

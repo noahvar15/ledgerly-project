@@ -539,6 +539,14 @@ pre code {
   word-break: normal;
 }
 
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox (older versions) */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard syntax */
+}
+
+
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;

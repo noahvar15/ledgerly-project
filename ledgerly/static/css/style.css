@@ -11636,6 +11636,22 @@ button {
   box-shadow: none !important;
   padding: 0.3125rem 1rem;
 }
+
+.btn-time {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: var(--white);
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.btn-time:focus {
+  background-color: var(--gray-dark);
+}
+
 .btn.btn-square {
   border-radius: 0px;
 }
@@ -16726,6 +16742,17 @@ input[type=radio] {
 }
 
 /* Switch Outline */
+.switch-outline-currency > .switch-input:checked ~ .switch-label {
+  background-color: transparent !important;
+  border-color: #fff;
+}
+.switch-outline-currency .switch-input:checked ~ .switch-label:after {
+  color: #4BBAA8;
+}
+.switch-outline-currency > .switch-input:checked ~ .switch-handle {
+  border-color: #4BBAA8;
+}
+
 .switch-outline-primary > .switch-input:checked ~ .switch-label {
   background-color: #ffffff !important;
   border-color: #4BBAA8;
@@ -16914,7 +16941,7 @@ input[type=radio] {
   font-size: 0.625rem;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #4BBAA8;
   border: 1px solid #c2cfd6;
   border-radius: 2px;
   transition: opacity background 0.3s ease-out;
@@ -16985,7 +17012,7 @@ input[type=radio] {
 }
 .switch.switch-icon .switch-label:before {
   right: 1px;
-  color: #c2cfd6;
+  color: #fff;
   content: "\f156";
 }
 .switch.switch-icon .switch-label:after {

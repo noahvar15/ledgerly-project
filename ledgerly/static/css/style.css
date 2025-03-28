@@ -11267,7 +11267,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-  color: #31343d !important;
+  color: #fff !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
@@ -11910,7 +11910,7 @@ button {
   background-color: transparent;
   border-bottom: none;
   flex-wrap: wrap;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .card-default .card-header h2 {
   font-size: 1.375rem;

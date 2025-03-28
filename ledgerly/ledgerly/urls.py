@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', include('dashboard.urls')), # Connects dashboard app
+    path('', include('users.urls')), # Connects users app
 ]

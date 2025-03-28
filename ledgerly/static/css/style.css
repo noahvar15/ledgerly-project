@@ -14500,7 +14500,7 @@ label {
 }
 
 .table.table-hover tbody tr:hover {
-  background-color: #4BBAA8;
+  background-color: rgba(75, 186, 168, 0.4);
   box-shadow: 0px 10px 18px 0px rgba(55, 103, 208, 0.2);
 }
 .table.table-hover tbody tr:hover td {
@@ -14527,11 +14527,10 @@ label {
   color: #fff;
   border-bottom: none;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .table.table-product tbody td {
-  padding-left: 18px;
-  padding: 14px 10px;
+  padding: 14px 10px 14px 10px;
 }
 .table.table-product tbody td img {
   border-radius: 5px;

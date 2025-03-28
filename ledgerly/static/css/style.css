@@ -3180,12 +3180,12 @@ input[type=button].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.9375rem;
-  color: #8a909d;
+  color: #ffffff;
   text-align: left;
   list-style: none;
-  background-color: #ffffff;
+  background-color: #000000;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ffffff;
   border-radius: 0.25rem;
 }
 
@@ -3335,6 +3335,11 @@ input[type=button].btn-block {
   margin: 0.5rem 0;
   overflow: hidden;
   border-top: 1px solid #f0f1f5;
+}
+
+.dropdown-icon {
+  width: 24px;
+  margin-right: 10px;
 }
 
 .dropdown-item {
@@ -12785,8 +12790,8 @@ code {
   border-bottom-right-radius: 0.25rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e5e9f2;
+  background-color: #000;
+  border-top: 1px solid #fff;
   margin-top: 0.625rem;
 }
 .navbar .dropdown-menu li.dropdown-footer > a {
@@ -14880,7 +14885,8 @@ table.dataTable thead .sorting {
   right: 0;
   min-width: 320px;
   min-height: 100%;
-  background-color: var(--gray-dark);
+  background-color: #000;
+  border-left: 1px solid #fff;
   box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.18);
   z-index: 1030;
   transform: translateX(350px);

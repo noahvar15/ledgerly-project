@@ -165,12 +165,13 @@
                   <!-- Offcanvas -->
                   <!-- Custom Notify goes below this line -->
                   <!-- User Account -->
+                   {% if user.is_authenticated %}
                   <li class="dropdown user-menu">
                     <button class="dropdown-toggle nav-link" data-toggle="dropdown">
                       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path fill="White" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
                       </svg>
-                      <span class="d-none d-lg-inline-block">John Pork</span>
+                      <span class="d-none d-lg-inline-block">{{ user.username }}</span>
                     </button>
 
                     <ul class="dropdown-menu dropdown-menu-right">
@@ -193,7 +194,7 @@
                       </li>
 
                       <li class="dropdown-footer">
-                        <a class="dropdown-link-item" href="{% url 'signin' %}">
+                        <a class="dropdown-link-item" href="{% url 'login' %}">
                           <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill="White" d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z"/>
                           </svg> 
@@ -202,6 +203,14 @@
                       </li>
                     </ul>
                   </li>
+                  {% else %}
+                  <li>
+                    <a class="nav-link" href="{% url 'login' %}">Login</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                  </li>
+                  {% endif %}
                 </ul>
               </div>
             </nav>

@@ -54,7 +54,7 @@
                 {% csrf_token %}
                 <div class="row">
                   <div class="form-group col-md-12 mb-4">
-                    <input type="text" name="name" required class="form-control input-lg" id="name" aria-describedby="nameHelp" placeholder="Name">
+                    <input type="text" name="username" required class="form-control input-lg" id="name" aria-describedby="nameHelp" placeholder="Username">
                   </div>
                   <div class="form-group col-md-12 mb-4">
                     <input type="email" name="email" required class="form-control input-lg" id="email" aria-describedby="emailHelp" placeholder="Username">
@@ -74,7 +74,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-pill mb-4">Sign Up</button>
                     <p>Already have an account?
-                      <a class="text-blue" href="{% url 'signin' %}">Sign in</a>
+                      <a class="text-blue" href="{% url 'login' %}">Sign in</a>
                     </p>
                   </div>
                 </div>

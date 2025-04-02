@@ -6,7 +6,7 @@ from django import forms
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ('email', 'name','is_staff', 'is_superuser', 'is_active')
+    list_display = ('email', 'username','is_staff', 'is_superuser', 'is_active')
     list_filter = ('is_staff', 'is_superuser', 'is_active')
     search_fields = ('email',)
     ordering = ('email',)
@@ -14,7 +14,7 @@ class CustomUserAdmin(UserAdmin):
     readonly_fields = ('last_login', 'date_joined',)
 
     fieldsets = (
-        (None, {'fields': ('email', 'password', 'name')}),
+        (None, {'fields': ('email', 'password', 'username')}),
         ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Important dates', {'fields': ('last_login', 'date_joined')}),
     )

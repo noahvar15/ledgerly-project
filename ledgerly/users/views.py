@@ -8,6 +8,7 @@ def signUp(request):
         email = request.POST['email']
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
+        name = request.POST['name']
 
 
         if CustomUser.objects.filter(email=email).exists():
@@ -17,9 +18,13 @@ def signUp(request):
         if password != confirm_password:
             messages.error(request, "Passwords do not match")
             return redirect('signup')
+        if not name.strip():
+            messages.error(request, "Name is required")
+            return redirect('signup')
+
 
         
-        user = CustomUser.objects.create_user(email=email, password=password)
+        user = CustomUser.objects.create_user(email=email, password=password, name=name)
         login(request, user)
         return redirect('dashboard-home')
     return render(request, 'users/sign-up.html')

@@ -80,11 +80,16 @@ WSGI_APPLICATION = 'ledgerly.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ledgerly_db',
+        'USER': 'root',
+        'PASSWORD': 'ledge152304',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

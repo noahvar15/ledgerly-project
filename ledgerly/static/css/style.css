@@ -12795,7 +12795,7 @@ code {
   border-top: 1px solid #fff;
   margin-top: 0.625rem;
 }
-.navbar .dropdown-menu li.dropdown-footer > a {
+.navbar .dropdown-menu li.dropdown-footer > form {
   padding: 0.94rem 1.25rem;
 }
 .navbar .dropdown-item.active,

@@ -6,12 +6,15 @@ from django import forms
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ('email', 'is_staff', 'is_superuser', 'is_active', 'date_joined')
+    list_display = ('email', 'name','is_staff', 'is_superuser', 'is_active')
     list_filter = ('is_staff', 'is_superuser', 'is_active')
     search_fields = ('email',)
     ordering = ('email',)
+
+    readonly_fields = ('last_login', 'date_joined',)
+
     fieldsets = (
-        (None, {'fields': ('email', 'password')}),
+        (None, {'fields': ('email', 'password', 'name')}),
         ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Important dates', {'fields': ('last_login', 'date_joined')}),
     )

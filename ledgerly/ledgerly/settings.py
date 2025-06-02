@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +27,11 @@ SECRET_KEY = 'django-insecure-ze6mo93v4)3&05zm#y1p32(n)el*ntj32(n42c$()37cb@t14^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://08ee-2600-8805-a21d-9f00-1828-a5a4-753f-21f4.ngrok-free.app',
+]
 
 
 # Application definition
@@ -140,3 +146,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#coinbase
+COINBASE_CLIENT_ID = config("COINBASE_CLIENT_ID")
+COINBASE_CLIENT_SECRET = config("COINBASE_CLIENT_SECRET")
+COINBASE_REDIRECT_URI = config("COINBASE_REDIRECT_URI")

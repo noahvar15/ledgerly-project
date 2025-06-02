@@ -1,5 +1,7 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+from django.conf import settings
+from django.utils.timezone import now
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
@@ -32,3 +34,16 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+class CoinbaseAccount(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    access_token = models.CharField(max_length=255)
+    refresh_token = models.CharField(max_length=255, null=True, blank=True)
+    token_expiry = models.DateTimeField()
+    scope = models.CharField(max_length=255)
+
+    def is_expired(self):
+        return now() >= self.token_expiry
+
+    def __str__(self):
+        return f"{self.user.username} – Coinbase"

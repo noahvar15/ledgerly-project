@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import CustomUser, CoinbaseAccount
 from django.forms import TextInput, Textarea
 from django import forms
 
@@ -26,3 +26,4 @@ class CustomUserAdmin(UserAdmin):
     )
 
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(CoinbaseAccount)

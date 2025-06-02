@@ -348,7 +348,60 @@
                 {% endblock charts %}
 
                 {% block transactions %}
-                  
+                  <div class="col-12">
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Transactions</h2>
+                      </div>
+                      <div class="card-body">
+                        <div id="productsTable_wrapper" class="dataTables_wrapper no-footer">
+                          <div class="dataTables_scroll">
+
+                            <!-- Scroll Head -->
+                            <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                              <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 100%; padding-right: 0px;">
+                                <table class="table table-hover table-product dataTable no-footer" style="width: 100%; margin-left: 0px;" role="grid">
+                                  <thead>
+                                    <tr role="row">
+                                      <th class="sorting" style="width: 100px;">Type</th>
+                                      <th class="sorting_asc" aria-sort="ascending" style="width: 75px;">Asset(s)</th>
+                                      <th class="sorting" style="width: 75px;">Current Value</th>
+                                      <th class="sorting" style="width: 75px;">P/L</th>
+                                      <th class="sorting" style="width: 75px;">Portfolio</th> <!--New-->
+                                    </tr>
+                                  </thead>
+                                </table>
+                              </div>
+                            </div>
+
+                            <!-- Scroll Body -->
+                            <div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;">
+                              <table id="productsTable" class="table table-hover table-product dataTable no-footer" style="width: 100%;" role="grid">
+                                <thead>
+                                  <tr role="row" style="height: 0px;">
+                                    <th style="height: 0px; width: 100px;"><div class="dataTables_sizing">Type</div></th>
+                                    <th style="height: 0px; width: 75px;"><div class="dataTables_sizing">Asset(s)</div></th>
+                                    <th style="height: 0px; width: 75px;"><div class="dataTables_sizing">Current Value</div></th>
+                                    <th style="height: 0px; width: 75px;"><div class="dataTables_sizing">P/L</div></th>
+                                    <th style="height: 0px; width: 75px;"><div class="dataTables_sizing">Portfolio</div></th> <!--New-->
+                                  </tr>
+                                </thead>                                
+                                <tbody>
+                                  <tr role="row" class="odd">
+                                    <td>Chihuahua</td>
+                                    <td class="sorting_1">3</td>
+                                    <td>1000000</td>
+                                    <td>3</td>
+                                    <td>Coinbase</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div> <!-- /.dataTables_scrollBody -->
+                          </div> <!-- /.dataTables_scroll -->
+                        </div> <!-- /#productsTable_wrapper -->
+                      </div> <!-- /.card-body -->
+                    </div> <!-- /.card -->
+                  </div> <!-- /.col-12 -->
                 {% endblock transactions %}
 
               {% endblock content %}
